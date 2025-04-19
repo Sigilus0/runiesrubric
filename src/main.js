@@ -147,8 +147,8 @@ for (let i = 1; i <= 16; i++) {
         btn.addEventListener("click", function () {
           const was4Active = btn.classList.contains('active');
           btn.classList.toggle('active');
-          counter += was4Active ? -4 : 4;
-          btn.textContent = was4Active ? `Forced Bad End` : "Forced Bad End (4)";
+          counter += was4Active ? -3 : 3;
+          btn.textContent = was4Active ? `Forced Bad End` : "Forced Bad End (3)";
 
           actionHistory.push({type: 4, added: !was4Active});
           updateDisplay();
@@ -301,8 +301,8 @@ for (let i = 1; i <= 16; i++) {
             case 4: {
               const target = document.querySelector('[data-index="4"]');
               target.classList.toggle('active');
-              counter += lastAction.added ? -4 : 4;
-              target.textContent = lastAction.added ? `Forced Bad End` : "Forced Bad End (4)";
+              counter += lastAction.added ? -3 : 3;
+              target.textContent = lastAction.added ? `Forced Bad End` : "Forced Bad End (3)";
               break;
             }
             case 5: {

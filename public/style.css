@@ -138,7 +138,8 @@ header {
         gap: 0.1em;
     }
     .button-grid {
-        max-width: 350px;
+        max-width: 375px;
+    }
 }
 
 

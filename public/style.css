@@ -136,7 +136,9 @@ header {
         justify-content: space-between;
         align-items: center;
         gap: 0.1em;
-        }
+    }
+    .button-grid {
+        max-width: 350px;
 }
 
 
